@@ -656,7 +656,7 @@ var PHOTOS = {
   "c3-capri":"img/c3-capri.jpg","c3-702":"img/c3-702.jpg","c3-heritage":"img/c3-heritage.jpg",
   "c2-capri":"img/c2-familia.jpg","c2-702":"img/c2-702.jpg","c2-heritage":"img/c2-heritage.jpg",
   "c1-capri":"img/c1-capri.jpg","c1-702":"img/c1-702.jpg","c1-heritage":"img/c1-heritage.jpg",
-  "res-capri":"img/res2-capri.jpg","res-702":"img/res2-702.jpg","res-heritage":"img/res2-heritage.jpg"
+  "res-capri":"img/res3-capri.jpg","res-702":"img/res2-702.jpg","res-heritage":"img/res2-heritage.jpg"
 };
 function ph(key,cls){
   var src=PHOTOS[key]; if(!src) return "";
@@ -778,22 +778,22 @@ var S = [
     {p:"capri",t:"Em casa, com o brunch posto para a família",art:"brunch",ph:"c1-capri",pos:"50% 50%",r:"Seu sábado começa com a família à mesa. O Capri tem plantas de 246 a 279 m², com 3 a 4 suítes."},
     {p:"e702",t:"No café da esquina, a pé",art:"cafe",ph:"c1-702",pos:"60% 50%",r:"Você escolheu o café a pé. O 702 fica nos Jardins, perto de restaurantes, boutiques e parques."},
     {p:"heritage",t:"Na hípica ou no campo de golfe",art:"golfe",ph:"c1-heritage",pos:"38% 50%",r:"Seu sábado começa na hípica ou no golfe. O Heritage tem hípica internacional e campo de golfe profissional de 18 buracos."}]},
-  {id:2,type:"stack",chap:"Em casa.",q:"Com quem você aproveita o sábado?",hint:"Deslize para ver as cartas e escolha a sua.",opts:[
+  {id:2,type:"stack",chap:"Em casa.",q:"Com quem você aproveita o fim de semana?",hint:"Deslize para ver as cartas e escolha a sua.",opts:[
     {p:"capri",t:"A família toda",art:"fam3",ph:"c2-capri",pos:"50% 55%",r:"A casa é da família toda, com 3 a 4 suítes e 3 vagas por unidade."},
     {p:"e702",t:"Só eu, ou nós dois",art:"duo",ph:"c2-702",pos:"36% 50%",r:"Para uma ou duas pessoas, o 702 tem plantas de 1 e 2 dormitórios."},
     {p:"heritage",t:"A família e os amigos",art:"fam5",ph:"c2-heritage",pos:"55% 50%",r:"Família e amigos reunidos: o Heritage tem Sports & Kids Club, Tennis Center by Mouratoglou e Crystal Lagoon."}]},
-  {id:3,type:"flip",chap:"Na casa,",q:"qual destas texturas é a sua?",opts:[
-    {p:"capri",t:"Mármore, veludo, estampa mediterrânea",tex:"marmore",ph:"c3-capri",r:"Você escolheu texturas mediterrâneas. Os interiores do Capri são assinados pela Dolce & Gabbana Casa."},
-    {p:"e702",t:"Ripas de madeira, luz difusa, linhas retas",tex:"concreto",ph:"c3-702",r:"Linhas retas e arquitetura contemporânea definem o projeto do 702."},
-    {p:"heritage",t:"Madeira clara, linho, pedra",tex:"madeira",ph:"c3-heritage",r:"Madeira, linho e pedra: os apartamentos Vista Riviera são mobiliados pela Armani/Casa."}]},
-  {id:4,type:"duel",chap:"Isso ou aquilo.",q:"Três duelos rápidos.",pairs:[
+  {id:3,type:"flip",chap:"Na decoração,",q:"qual estilo mais te agrada?",opts:[
+    {p:"capri",t:"Mediterrâneo, com mármore e veludo",tex:"marmore",ph:"c3-capri",r:"Você escolheu texturas mediterrâneas. Os interiores do Capri são assinados pela Dolce & Gabbana Casa."},
+    {p:"e702",t:"Contemporâneo, com madeira e linhas retas",tex:"concreto",ph:"c3-702",r:"Linhas retas e arquitetura contemporânea definem o projeto do 702."},
+    {p:"heritage",t:"Natural, com linho, pedra e madeira clara",tex:"madeira",ph:"c3-heritage",r:"Madeira, linho e pedra: os apartamentos Vista Riviera são mobiliados pela Armani/Casa."}]},
+  {id:4,type:"duel",chap:"Sem pensar muito,",q:"o que tem mais a ver com você?",pairs:[
     [{p:"capri",t:"Espaço de sobra",d:"Para receber sem ninguém ficar apertado.",loop:"espaco",ph:"c4-espaco",r:"Espaço pesou para você: o Capri tem apartamentos amplos e coberturas duplex."},
      {p:"e702",t:"Tudo a pé",d:"Café, padaria e restaurante a poucos passos.",loop:"ape",ph:"c4-a-pe",r:"Tudo a pé: o 702 fica na Rua Estados Unidos, no Jardim Paulista."}],
     [{p:"e702",t:"Burburinho da cidade",d:"Gente na rua, vitrines e mesas na calçada.",loop:"cidade",ph:"c4-cidade",r:"Você gosta do movimento da cidade, e o 702 está cercado pelos melhores restaurantes e boutiques da região."},
      {p:"heritage",t:"Silêncio do campo",d:"Só o canto dos pássaros pela manhã.",loop:"campo",ph:"c4-campo",r:"Silêncio do campo: são mais de 4 milhões de m² de natureza a 115 km de São Paulo."}],
     [{p:"capri",t:"Mesa cheia em casa",d:"Família e amigos em volta da mesa.",loop:"mesa",ph:"c4-mesa",r:"Mesa cheia em casa: os ambientes sociais do Capri têm atmosfera mediterrânea."},
      {p:"heritage",t:"Dia inteiro ao ar livre",d:"Do café da manhã ao pôr do sol lá fora.",loop:"arlivre",ph:"c4-ar-livre",r:"Dia inteiro ao ar livre, com Crystal Lagoon de 35 mil m² e hípica internacional."}]]},
-  {id:5,type:"sabado",chap:"É sábado.",q:"O que não pode faltar?",items:[
+  {id:5,type:"sabado",chap:"No seu tempo livre,",q:"o que não pode faltar?",items:[
     {p:"capri",k:"vinho",t:"Um bom vinho"},{p:"capri",k:"mesa",t:"Mesa posta"},{p:"capri",k:"brinde",t:"Brinde com os amigos"},
     {p:"e702",k:"restaurante",t:"Restaurante novo"},{p:"e702",k:"exposicao",t:"Exposição de arte"},{p:"e702",k:"corrida",t:"Corrida no parque"},
     {p:"heritage",k:"golfe",t:"Partida de golfe"},{p:"heritage",k:"tenis",t:"Tênis ao ar livre"},{p:"heritage",k:"cavalo",t:"Passeio a cavalo"}],
@@ -1087,7 +1087,7 @@ function renderDuel(s,dir){
   }
   function draw(){
     var pr=s.pairs[i]; ready=false;
-    cnt.innerHTML='<b>Duelo '+(i+1)+' de 3</b> · toque na carta que tem mais a ver com você.';
+    cnt.innerHTML='<b>Duelo '+(i+1)+' de 3</b>';
     row.innerHTML=card(pr[0],0)+'<span class="dvs" aria-hidden="true"><span>ou</span></span>'+card(pr[1],1);
     var cs=[].slice.call(row.querySelectorAll(".xcard"));
     cs.forEach(function(c){ c.querySelector(".xbtn").addEventListener("click",function(){ pick(c,cs); }); });
@@ -1129,7 +1129,7 @@ function renderSabado(s,dir){
   });
   var el=mount(head(5)+qblock(s,'<p class="sub" id="mcount">Escolha 3 opções.</p>')+
     '<div class="opts pad sqwrap"><div class="sqgrid" id="g9">'+grid+'</div>'+
-    '<div class="tray"><span class="tl">Meu sábado</span><span class="slots"><i class="slot"></i><i class="slot"></i><i class="slot"></i></span><button class="cta" id="close" disabled>Pronto</button></div></div>',tcls(),dir);
+    '<div class="tray"><span class="tl">Minhas escolhas</span><span class="slots"><i class="slot"></i><i class="slot"></i><i class="slot"></i></span><button class="cta" id="close" disabled>Pronto</button></div></div>',tcls(),dir);
   wire(el);
   var g=el.querySelector("#g9"), slots=el.querySelectorAll(".slot"), btn=el.querySelector("#close"), cnt=el.querySelector("#mcount");
   function sync(){
@@ -1200,7 +1200,7 @@ function maskPhone(v){
 }
 function renderForm(dir){
   var el=mount(
-    '<div class="top pad"><div class="segs" aria-hidden="true">'+'<i class="done"></i>'.repeat(7)+'</div><div class="meta"><button class="back" data-back aria-label="Voltar">'+BACK+'</button><span class="label">Sábado completo · 7 de 7</span><span class="count"></span></div></div>'+
+    '<div class="top pad"><div class="segs" aria-hidden="true">'+'<i class="done"></i>'.repeat(7)+'</div><div class="meta"><button class="back" data-back aria-label="Voltar">'+BACK+'</button><span class="label">Cartas na mesa · 7 de 7</span><span class="count"></span></div></div>'+
     '<div class="form-wrap pad">'+
       '<h2 class="h-xl" style="font-size:34px;margin-top:6px">Seu destino é…</h2>'+
       '<div class="locked-card"><div class="blur" aria-hidden="true"><span class="label">Seu perfil</span><b>Perfil Weve</b><div class="bars"><i style="width:72%"></i><i style="width:22%;opacity:.6"></i><i style="width:10%;opacity:.4"></i></div></div>'+
